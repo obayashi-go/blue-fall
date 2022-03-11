@@ -32,7 +32,7 @@ export default function Header() {
                             </p>
                         </Link>
                     </Typography>
-                    <Button color="inherit">Logout</Button>
+                    {/*<Button color="inherit">Logout</Button>*/}
                 </Toolbar>
             </AppBar>
         </Box>

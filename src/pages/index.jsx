@@ -2,7 +2,6 @@ import React from "react"
 import "../customCommon.css"
 import Layout from "../components/layout";
 import TopCarousel from "../components/topCarousel";
-import ChildCareTwoToneIcon from '@mui/icons-material/ChildCareTwoTone';
 
 export default function Home() {
   return (
@@ -10,9 +9,14 @@ export default function Home() {
           <Layout>
               <TopCarousel />
               <section id="ao-profile" className="ao-myself">
-                  <p className="section-title">
-                      <ChildCareTwoToneIcon />
-                      ぼくのおはなし
+                  <p className="section-title animate">
+                      <span className="top-title-char">ぼ</span>
+                      <span className="top-title-char">く</span>
+                      <span className="top-title-char">の</span>
+                      <span className="top-title-char">お</span>
+                      <span className="top-title-char">は</span>
+                      <span className="top-title-char">な</span>
+                      <span className="top-title-char">し</span>
                   </p>
                   <div className="profile-box">
                       <p>

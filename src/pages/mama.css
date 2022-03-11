@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    transform: translate(0, 0);
+}
+
+.bg.-visible:before {
+    transform: translate(0, 0);
+}
+
+.bg:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a33e46;
+    transform: translate(0, 100%);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
+    content: '';
+}
+
+/* テキストのスタイル */
+.title {
+    display: block;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.title span {
+    display: block;
+    opacity: 0;
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1s, opacity linear 0.7s;
+}
+
+.title span:first-child {
+    transform: translate(0, 40px);
+    font-size: 20px;
+    transition-delay: 0.25s;
+}
+
+.title span:nth-child(2) {
+    margin-top: 18px;
+    transform: translate(0, 30px);
+    font-size: 48px;
+    transition-delay: 0.45s;
+}
+
+.title span:nth-child(3) {
+    margin-top: 18px;
+    transform: translate(0, 30px);
+    font-size: 30px;
+    transition-delay: 0.45s;
+    color: #afb42b;
+}
+
+.bg.-visible .title span {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.message-for-mama {
+    position: absolute;
+    top: calc(100vh + 20%);
+    font-size: 16px;
+    color: #4254a3;
+    padding-left: 10px;
+    text-shadow: #0b2f33 1px 1px 10px;
+}
+.message-for-mama > span {
+    font-size: 18px;
+}
+
+#promise > p {
+    text-align: center;
+    text-shadow: 4px 4px 5px #534f4f;
+    color: #028393;
+    font-size: 18px;
+}

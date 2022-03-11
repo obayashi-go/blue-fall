@@ -44,6 +44,10 @@ export default function TopCarousel() {
                 <div>
                     <StaticImage src="../../static/img/IMG_4504.JPG" />
                 </div>
+                <div>
+                    <StaticImage src="../../static/img/IMG_4830.jpg" />
+                </div>
+                
             </Carousel>
         </>
     )
