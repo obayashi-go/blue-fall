@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: "Hannari", "Arial";
+}
+a:visited{
+    color: inherit;
+}
+.top-title {
+    font-family: 'Amatic SC', cursive;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 300px;
+}
+.gatsby-image-wrapper-constrained {
+    width: 100%;
+    height: 300px;
+}
+
+#___gatsby {
+    padding-top: 72px;
+}
+
+:root header {
+    background-color: rgb(0, 188, 212);
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    top: 0;
+    z-index: 99999999999;
+}
+
+/** menu **/
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+#react-burger-cross-btn, .bm-cross-button {
+    display: none;
+}
+.bm-menu-wrap {
+    top: 0;
+    left: 0;
+}
+/* General sidebar styles */
+.bm-menu {
+    padding: 0;
+    font-size: 20px;
+    overflow: hidden !important;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,222,234,1) 100%);
+}
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+/* Wrapper for item list */
+.bm-item-list {
+    color: #1a0ced;
+    padding: 0;
+}
+/* Individual item */
+.bm-item {
+    font-family: 'Amatic SC', cursive;
+    text-decoration: none;
+    outline: none;
+    height: 50px;
+    line-height: 50px;
+    background: rgb(224,247,250);
+    background: linear-gradient(180deg, rgba(224,247,250,1) 0%, rgba(178,235,242,1) 50%, rgba(128,222,234,1) 100%);
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.sleep-ao {
+    opacity: .3;
+    background: none;
+    margin: 0;
+    display: block;
+    position: relative;
+}
+
+.menu-close {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 110%;
+    background: none;
+    width: 100px;
+    color: #fff;
+}
+
+/** Home Page section **/
+.ao-myself {
+    padding: 10px;
+}
+.section-title {
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.profile-box {
+    padding: 10px;
+}
+
+.animate span {
+    display: inline-block;
+}
+
+a.repeat {
+    display: inline-block;
+    font-size: 12px;
+    text-transform: none;
+    text-decoration: none;
+    color: orange;
+    padding: 5px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-weight: normal;
+    margin: 0 0 0 50px;
+    border-radius: 3px;
+    position: relative;
+    bottom: 15px;
+}
+
+a.repeat:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.animate span:nth-of-type(2) {
+    animation-delay: .1s;
+    color: #512da8;
+}
+.animate span:nth-of-type(3) {
+    animation-delay: .2s;
+    color: #d81b60;
+}
+.animate span:nth-of-type(4) {
+    animation-delay: .3s;
+    color: #afb42b;
+}
+.animate span:nth-of-type(5) {
+    animation-delay: .4s;
+    color: #2e7d32;
+}
+.animate span:nth-of-type(6) {
+    animation-delay: .5s;
+    color: #5d4037;
+}
+.animate span:nth-of-type(7) {
+    animation-delay: .6s;
+    color: #01579b;
+}
+/*.animate span:nth-of-type(8) {*/
+/*    animation-delay: .35s;*/
+/*}*/
+/*.animate span:nth-of-type(9) {*/
+/*    animation-delay: .4s;*/
+/*}*/
+/*.animate span:nth-of-type(10) {*/
+/*    animation-delay: .45s;*/
+/*}*/
+/*.animate span:nth-of-type(11) {*/
+/*    animation-delay: .5s;*/
+/*}*/
+/*.animate span:nth-of-type(12) {*/
+/*    animation-delay: .55s;*/
+/*}*/
+/*.animate span:nth-of-type(13) {*/
+/*    animation-delay: .6s;*/
+/*}*/
+/*.animate span:nth-of-type(14) {*/
+/*    animation-delay: .65s;*/
+/*}*/
+/*.animate span:nth-of-type(15) {*/
+/*    animation-delay: .7s;*/
+/*}*/
+/*.animate span:nth-of-type(16) {*/
+/*    animation-delay: .75s;*/
+/*}*/
+/*.animate span:nth-of-type(17) {*/
+/*    animation-delay: .8s;*/
+/*}*/
+/*.animate span:nth-of-type(18) {*/
+/*    animation-delay: .85s;*/
+/*}*/
+/*.animate span:nth-of-type(19) {*/
+/*    animation-delay: .9s;*/
+/*}*/
+/*.animate span:nth-of-type(20) {*/
+/*    animation-delay: .95s;*/
+/*}*/
+
+.top-title-char {
+    color: #00bcd4;
+    opacity: 0;
+    transform: translate(-150px, -50px) rotate(-180deg) scale(3);
+    animation: revolveScale .5s forwards;
+}
+
+@keyframes revolveScale {
+    60% {
+        transform: translate(20px, 20px) rotate(30deg) scale(.3);
+    }
+
+    100% {
+        transform: translate(0) rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.footer {
+    padding: 8px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}

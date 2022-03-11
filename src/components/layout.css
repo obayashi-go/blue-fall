@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.bg_pattern {
+    width: 100vw;
+    height: auto;
+    background-color: #ffffff;
+    z-index: -2;
+}
+.Polka {
+    z-index: -1;
+    background-image: radial-gradient(#e0f7fa 2px, #ffffff 2px);
+    background-size: 20px 20px;
+}
